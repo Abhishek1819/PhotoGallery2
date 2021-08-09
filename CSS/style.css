@@ -1,0 +1,121 @@
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+    color: white;
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 300px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: #FFF;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom,#344f99,#40c055);
+    background-repeat: no-repeat;
+}
+
+.column{
+    display: block;
+    width: 600px;
+    margin: 80px 326px;
+}
+    
+    
+
+
+#Featured{
+    width: 600px;
+    height: 391px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.thumbnail{
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.thumbnail:hover{
+    opacity: 1;
+}
+
+.active{
+    opacity: 1;
+}
+
+#slide-wrapper{
+    max-width: 500px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    padding: 0px 65px;
+}
+
+#slider{
+    width: 440px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    padding-right: 50px;
+
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow:hover{
+    opacity: .5;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
+
+
+
+
